@@ -24,7 +24,7 @@ class Api::V1::PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update api_v1_post" do
-    patch api_v1_post_url(@api_v1_post), params: { api_v1_post: { content: @api_v1_post.content, title: @api_v1_post.title } }, as: :json
+    patch api_v1_post_url(@api_v1_post), params: { api_v1_post: { content: @api_v1_post.content, title: @api_v1_post.title} }, as: :json
     assert_response :success
   end
 

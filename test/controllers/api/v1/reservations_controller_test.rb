@@ -12,7 +12,7 @@ class Api::V1::ReservationsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create api_v1_reservation" do
     assert_difference("Api::V1::Reservation.count") do
-      post api_v1_reservations_url, params: { api_v1_reservation: {  } }, as: :json
+      post api_v1_reservations_url, params: { api_v1_reservation: {} }, as: :json
     end
 
     assert_response :created
@@ -24,7 +24,7 @@ class Api::V1::ReservationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update api_v1_reservation" do
-    patch api_v1_reservation_url(@api_v1_reservation), params: { api_v1_reservation: {  } }, as: :json
+    patch api_v1_reservation_url(@api_v1_reservation), params: { api_v1_reservation: {} }, as: :json
     assert_response :success
   end
 

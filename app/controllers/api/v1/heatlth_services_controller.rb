@@ -8,5 +8,4 @@ class Api::V1::HeatlthServicesController < ApplicationController
     @service = Service.with_attached_image.find(params[:id])
     render json: @service.as_json.merge(image_url: url_for(@service.image)), status: :ok
   end
-
 end

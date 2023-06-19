@@ -4,5 +4,5 @@ class Service < ApplicationRecord
   has_many :reservations, dependent: :destroy
   has_many :users, through: :reservations
 
-  validates :service_name, :description, :price, :service_date, presence: true
+  validates :service_name, :description, :price, :service_date, :doctor_name, presence: true
 end

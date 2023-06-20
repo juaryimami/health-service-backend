@@ -3,6 +3,7 @@ class RegistrationsController < Devise::RegistrationsController
 
   def create
     build_resource(sign_up_params)
+    # @user = User.new(sign_up_params)
 
     if resource.save
       render json: { message: 'Sign up successful' }

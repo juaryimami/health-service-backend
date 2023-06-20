@@ -36,6 +36,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+#  Add jwt for devise
 gem 'devise-jwt'
 gem "rack-cors"
 

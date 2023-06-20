@@ -1,4 +1,3 @@
-class ApplicationController < ActionController::API
   require 'English'
   require "#{Rails.root}/lib/json_web_token"
 
@@ -28,4 +27,4 @@ class ApplicationController < ActionController::API
       devise_parameter_sanitizer.permit(:account_update, keys: %i[name email password current_password])
     end
   end
-end
+

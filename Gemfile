@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.0.1"
+ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'activestorage'
@@ -47,9 +47,12 @@ group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails'
   gem 'rswag-specs'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'rspec-rails'
 end

@@ -5,7 +5,7 @@ databases:
 
 services:
   - type: web
-    name: book-health-service3
+    name: book-health-service4
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"

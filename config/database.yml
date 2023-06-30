@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: health_service_backend_production
-  username: health_service_backend
-  password: <%= ENV["HEALTH_SERVICE_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
